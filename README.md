@@ -2,6 +2,8 @@
 
 A TUI tool to manage and search prompts from various AI coding assistants.
 
+![Screenshot](./screenshot.png)
+
 ## Features
 
 - Parse and index conversation logs from:
