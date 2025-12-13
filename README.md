@@ -2,7 +2,7 @@
 
 A TUI tool to manage and search prompts from various AI coding assistants.
 
-![Screenshot](./screenshot.png)
+![Screenshot](./imgs/screenshot.png)
 
 ## Features
 
